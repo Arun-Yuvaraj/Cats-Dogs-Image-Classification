@@ -90,29 +90,3 @@ history = model.fit_generator(train,steps_per_epoch=len(train),epochs=50)
 acc = model.evaluate_generator(validation, steps=len(validation))
 
 
-# In[1]:
-
-
-from keras import backend as K
-K.tensorflow_backend._get_available_gpus()
-
-
-# In[2]:
-
-
-from tensorflow.python.client import device_lib
-print(device_lib.list_local_devices())
-
-
-# In[2]:
-
-
-import tensorflow as tf
-tf.test.is_gpu_available( cuda_only=False, min_cuda_compute_capability=None )
-
-
-# In[ ]:
-
-
-
-
