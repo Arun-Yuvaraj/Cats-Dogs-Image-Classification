@@ -140,9 +140,3 @@ history = model.fit_generator(train,steps_per_epoch=len(train),epochs=20)
 
 acc = model.evaluate_generator(validation, steps=len(validation))
 
-
-# In[38]:
-
-
-
-
